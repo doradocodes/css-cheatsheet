@@ -1,0 +1,45 @@
+.attribute {
+    padding-left: 1em;
+    display: flex;
+    gap: 0.25em;
+    white-space: nowrap;
+    margin-bottom: 5px;
+    /*color: #dd00fa;*/
+    /*justify-content: space-between;*/
+}
+
+.property {
+    background: white;
+    color: black;
+    padding: 0 0.5em;
+    white-space: nowrap;
+}
+
+.unchecked {
+    opacity: 0.2;
+}
+
+.hintWrapper {
+    position: relative;
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 0.5em;
+    z-index: 1;
+    display: none;
+    white-space: wrap;
+    width: 15em;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.activePopup {
+    display: block;
+}
