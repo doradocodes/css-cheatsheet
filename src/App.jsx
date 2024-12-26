@@ -12,19 +12,23 @@ function App() {
 
     return (
     <>
-        <h2 className="eyebrow">All I want is a...</h2>
-        <h1 className="title">CSS Cheatsheet</h1>
+        <header className="header">
+            <h2 className="eyebrow">All I want is a...</h2>
+            <h1 className="title">CSS Cheatsheet</h1>
+        </header>
+
         <div className="grid">
             <nav>
                 <ul>
-                    { Object.values(sections).map((section, index) => (
+                    <h2 className="nav-title">Style types</h2>
+                    {Object.values(sections).map((section, index) => (
                         <li key={index}>
                             <a href={`#${formatID(section.title)}`}>{section.title}</a>
                         </li>
                     ))}
                 </ul>
             </nav>
-            <main>
+            <main className="main">
                 { Object.values(sections).map((section, index) => (
                     <Section key={index} title={section.title} defaultStyles={section.defaultStyles} previewContent={section.previewContent}/>
                 ))}

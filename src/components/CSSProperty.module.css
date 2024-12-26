@@ -2,17 +2,16 @@
     padding-left: 1em;
     display: flex;
     gap: 0.25em;
-    white-space: nowrap;
     margin-bottom: 5px;
-    /*color: #dd00fa;*/
-    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .property {
     background: white;
     color: black;
     padding: 0 0.5em;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 .unchecked {
@@ -28,6 +27,7 @@
     top: 0;
     left: 100%;
     background-color: #fff;
+    color: black;
     border: 1px solid #eee;
     border-radius: 5px;
     padding: 0.5em;

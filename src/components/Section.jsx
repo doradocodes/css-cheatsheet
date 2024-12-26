@@ -45,7 +45,7 @@ export default function Section({title, defaultStyles, previewContent}) {
             <div className={styles.moduleWrapper}>
                 <div className={styles.modulePreview}>
                    <span className={styles.modulePreviewLabel}>Preview</span>
-                    <div style={formatStylesObject(styleValues)}>
+                    <div className={styles.modulePreviewContent} style={formatStylesObject(styleValues)}>
                         {previewContent}
                     </div>
                 </div>
