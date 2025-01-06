@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Section from "./components/Section.jsx";
-import {sections} from "./data.js";
+import {sections} from "./data.jsx";
 
 function App() {
     const formatID = (title) => {

@@ -1,6 +1,6 @@
 export const sections = {
     textStyles: {
-        title: 'Text Styles',
+        title: 'Text',
         previewContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.',
         defaultStyles: {
             'color': {
@@ -71,7 +71,7 @@ export const sections = {
         }
     },
     backgroundStyles: {
-        title: 'Background Styles',
+        title: 'Background',
         defaultStyles: {
             'background-color': {
                 value: 'blue',
@@ -96,7 +96,8 @@ export const sections = {
         }
     },
     borderStyles: {
-        title: 'Border Styles',
+        title: 'Border',
+        previewContent: <div style={{ background: '#eee', padding: '10px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</div>,
         defaultStyles: {
             'border-style': {
                 value: 'dashed',
@@ -117,7 +118,8 @@ export const sections = {
         }
     },
     boxStyles: {
-        title: 'Box Styles',
+        title: 'Box',
+        previewContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.',
         defaultStyles: {
             'background': {
                 value: 'lightblue',
@@ -143,29 +145,14 @@ export const sections = {
                 value: '20px',
                 checked: false,
             },
-            'display': {
-                value: 'flex',
-                checked: false,
-            },
-            'flex-direction': {
-                value: 'column',
-                checked: false,
-            },
-            'justify-content': {
-                value: 'center',
-                checked: false,
-            },
-            'align-items': {
-                value: 'center',
-                checked: false,
-            },
         }
     },
-    layoutStyles: {
-        title: 'Layout Styles',
+    positioning: {
+        title: 'Positioning',
+        previewContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.',
         defaultStyles: {
             'position': {
-                value: 'relative',
+                value: 'absolute',
                 checked: false,
             },
             'top': {
@@ -206,6 +193,90 @@ export const sections = {
             },
             'visibility': {
                 value: 'visible',
+                checked: false,
+            },
+        }
+    },
+    flexboxStyles: {
+        title: 'Flexbox',
+        // eslint-disable-next-line react/jsx-key
+        previewContent: [
+            <div style={{ border: '1px solid black' }}>Content 1</div>,
+            <div style={{ border: '1px solid black' }}>Content 2</div>,
+            <div style={{ border: '1px solid black' }}>Content 3</div>
+        ],
+        defaultStyles: {
+            'display': {
+                value: 'flex',
+                checked: false,
+            },
+            'flex-direction': {
+                value: 'column',
+                checked: false,
+            },
+            'justify-content': {
+                value: 'center',
+                checked: false,
+            },
+            'align-items': {
+                value: 'center',
+                checked: false,
+            },
+        }
+    },
+    gridStyles: {
+        title: 'Grid',
+        // eslint-disable-next-line react/jsx-key
+        previewContent: [
+            <div style={{ border: '1px solid black' }}>Content 1</div>,
+            <div style={{ border: '1px solid black' }}>Content 2</div>,
+            <div style={{ border: '1px solid black' }}>Content 3</div>
+        ],
+        defaultStyles: {
+            'display': {
+                value: 'grid',
+                checked: false,
+            },
+            'grid-template-columns': {
+                value: '1fr 1fr 1fr',
+                checked: false,
+            },
+            'grid-template-rows': {
+                value: '1fr 1fr 1fr',
+                checked: false,
+            },
+            'gap': {
+                value: '20px',
+                checked: false,
+            },
+        }
+    },
+    miscellaneous: {
+        title: 'Miscellaneous',
+        previewContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.',
+        defaultStyles: {
+            'cursor': {
+                value: 'pointer',
+                checked: false,
+            },
+            'filter': {
+                value: 'blur(2px)',
+                checked: false,
+            },
+            'opacity': {
+                value: '0.5',
+                checked: false,
+            },
+            'transform': {
+                value: 'rotate(45deg)',
+                checked: false,
+            },
+            'transition': {
+                value: 'all 0.3s ease',
+                checked: false,
+            },
+            'animation': {
+                value: 'spin 4s linear infinite',
                 checked: false,
             },
         }
